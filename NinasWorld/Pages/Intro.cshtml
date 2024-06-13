@@ -1,0 +1,113 @@
+﻿@page
+@model NinasWorld.Pages.IntroModel
+@{
+    ViewData["Title"] = "Intro";
+}
+
+<div class=" p-16 ">
+
+    @* IMG *@
+    <div class="bg-gradient-to-t from-purple-500 to-indigo-500 rounded-xl px-12 py-8 flex flex-row justify-between gap-4 drop-shadow-lg">
+        <div class="text-white flex flex-col justify-between">
+            <div>
+                <div class="text-2xl font-semibold">
+                    Nina's World
+                </div>
+                <div class="pt-2 pb-4 text-lg">
+                    Follow Nina on her journey as she faces different obstacles and explores the world around her.
+                </div>
+            </div>
+            <a class="bg-white text-indigo-600 rounded-full py-2 px-4 w-min text-nowrap hover:bg-gray-200" asp-page="/Game">
+                Play Now
+            </a>
+        </div>
+        
+        <div class="overflow-hidden mr-16 sm:w-40 md:w-72">
+            <img class=" object-cover object-top" src="images/Ninas.png">
+        </div>
+    </div>
+
+    <div class="flex flex-col pt-20 gap-20 text-white">
+
+        @* Story *@
+        <div class="flex flex-col">
+            <div class="font-semibold text-xl mb-3">
+                Story
+            </div>
+            <div class="">
+                Nina, a red haired adventurer, needs to eradicate all the Bird creatures to bring peace to her colorful world. However, her journey won't be easy as the world is dangenrous and unstable, the floor may sometimes even disappear before your eyes. Make sure to help Nina in her journey and bring peace to her world, she is eager to explore it!
+            </div>
+        </div>
+
+        @* Jugadores *@
+        <div class="flex flex-col">
+            <div class="font-semibold text-xl mb-3">
+                Characters
+            </div>
+
+            <div class="flex flex-row justify-around gap-20">
+                <div class="flex flex-row bg-gray-light p-3 rounded-lg drop-shadow-lg">
+                    <div>
+                        <img class="w-40 h-24 object-cover" src="images/Nina.png">
+                    </div>
+                    <div class="pl-3">
+                        <div class="font-semibold pb-2">
+                            Nina
+                        </div>
+                        <div>
+                            As the main character, she wishes to explore her world, however she first needs to end with her enemies...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row bg-gray-light p-3 rounded-lg drop-shadow-lg">
+                    <div>
+                        <img class="w-40 h-24 object-cover" src="images/Bird.png">
+                    </div>
+                    <div class="pl-5">
+                        <div class="font-semibold pb-2">
+                            Birds
+                        </div>
+                        <div>
+                            Birds have infested Nina’s world. There are several types and some are more dangerous, be aware!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @* How to play *@
+        <div class="flex flex-col">
+            <div class="font-semibold text-xl mb-3">
+                How to play
+            </div>
+            <ul class="pb-14 list-disc pl-7">
+                <li>In this platform game, Nina needs to destroy all of the birds in order to win. If she falls, the game restarts.</li>
+                 <li>Each bird is worth different points, which are added to your total score. Jump on a bird to destroy it. </li>
+                 <li>Use the keys to move the character. Some platforms are unstable, they can only be stepped on once.</li>
+                 <li>The game finishes when all birds are destroyed. </li>
+                 <li>Press R at any point to restart the game. Good luck!</li>
+            </ul>
+
+            <div class="flex flex-row justify-around">
+                <div class="flex flex-col justify-center bg-gray-light p-3 rounded-lg drop-shadow-lg">
+                    <img class="w-auto h-32 object-contain" src="images/keys_lr.png">
+                    <div class="pt-3">
+                        Use the left and right arrow keys to move Nina.
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center bg-gray-light p-3 rounded-lg drop-shadow-lg">
+                    <img class="w-auto h-32 object-contain" src="images/keys_up.png">
+                    <div class="pt-3">
+                        Use the up arrow to jump. (You can't doublejump)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</div>
